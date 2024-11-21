@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00008b; /* Same dark blue as in admindashboard */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Make the text color white */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #575fcf; /* Light blue hover color */
+    border-radius: 5px;
+    color: white;
+}
+
+/* Specific style for logout link */
+nav ul li a[href="javascript:void(0);"] {
+    font-weight: bold;
+    color: white; /* Ensure "Logout" text is white */
+    cursor: pointer;
+}
+
+nav ul li a[href="javascript:void(0);"]:hover {
+    text-decoration: underline;
+}
+
+/* Student Dashboard Section */
+.student-dashboard {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-dashboard h1 {
+    text-align: center;
+    color: #333;
+}
+
+.student-dashboard h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+#meeting-list {
+    margin-top: 20px;
+}
+
+.meeting-entry {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.meeting-entry p {
+    margin: 5px 0;
+}
+
+.meeting-entry a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.meeting-entry a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 15px 0;
+}
